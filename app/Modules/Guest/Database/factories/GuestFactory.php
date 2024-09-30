@@ -20,7 +20,7 @@ class GuestFactory extends Factory
             'first_name' => $this->faker->name,
             'last_name' => $this->faker->lastName,
             'email' => $this->faker->unique()->safeEmail,
-            'phone' => $this->faker->unique()->phoneNumber,
+            'phone' => $this->faker->unique()->e164PhoneNumber,
             'country' => $this->faker->country,
         ];
     }
